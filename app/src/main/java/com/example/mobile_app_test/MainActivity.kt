@@ -20,6 +20,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.tooling.preview.PreviewScreenSizes
+import com.example.mobile_app_test.ui.components.MenuItem
 import com.example.mobile_app_test.ui.theme.MobileapptestTheme
 
 class MainActivity : ComponentActivity() {
@@ -76,10 +77,7 @@ enum class AppDestinations(
 
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
+    MenuItem()
 }
 
 @Preview(showBackground = true)
