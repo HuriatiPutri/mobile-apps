@@ -8,6 +8,11 @@ android {
     compileSdk {
         version = release(37)
     }
+    testOptions {
+        unitTests {
+            isIncludeAndroidResources = true
+        }
+    }
 
     defaultConfig {
         applicationId = "com.example.mobile_app_test"
